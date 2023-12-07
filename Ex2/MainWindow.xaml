@@ -1,0 +1,21 @@
+﻿<Window x:Class="Ex2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <ListBox x:Name="memberList" Height="NaN" Margin="38,31,481,74" Width="NaN" Grid.Column="1"/>
+        <ComboBox x:Name="dropdown" HorizontalAlignment="Left" Margin="625,31,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBlock x:Name="dropLabel" HorizontalAlignment="Left" Margin="520,34,0,0" TextWrapping="Wrap" Text="Member Type" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="nameInput" HorizontalAlignment="Left" Margin="625,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBlock x:Name="nameLabel" HorizontalAlignment="Left" Margin="561,74,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" RenderTransformOrigin="1.325,0.441" Grid.Column="1"/>
+        <DatePicker x:Name="datePick" HorizontalAlignment="Left" Margin="643,121,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock x:Name="dateLabel" HorizontalAlignment="Left" Margin="530,125,0,0" TextWrapping="Wrap" Text="Date Joined" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="AddBtn" Content="Add" HorizontalAlignment="Left" Margin="719,176,0,0" VerticalAlignment="Top" Grid.Column="1" Click="AddBtn_Click"/>
+        <TextBlock x:Name="memberCount" HorizontalAlignment="Left" Margin="624,344,0,0" TextWrapping="Wrap" Text="Number of members: 0" VerticalAlignment="Top" Grid.Column="1"/>
+
+    </Grid>
+</Window>
